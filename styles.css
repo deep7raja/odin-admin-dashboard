@@ -1,6 +1,10 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: Roboto;
+}
+:root{
+    --main-bg-color: #e2e8f0;
 }
 
 .container{
@@ -13,10 +17,10 @@ body{
 
 
 .header{
-    border: 1px solid red;
     grid-column: 2/-1;
 
-    padding: 10px 30px 10px 20px;
+    padding: 10px 30px 15px 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .header-one{
     display: grid;
@@ -37,17 +41,48 @@ body{
     font-size: 20px;
     font-weight: bold;
 }
-#header-avatar{
+#header-one-avatar{
     height: 40px;
     width: 40px;
     border-radius: 20px;
 }
 
+.header-two{
+    margin-top: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: auto 1fr auto auto auto;
+    gap: 20px;
+
+}
+.header-two img{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+.header-two>div{
+    font-weight: bold;
+}
+.header-two>div>div:nth-child(2){
+    font-size: 30px;
+}
+.header-two button{
+    border-style: none;
+    border-radius: 20px;
+    background-color: #1992d4;
+    color: white;
+    font-weight: 900;
+    padding: 7px 20px;
+}
+.header-two button:hover{
+    background-color: #b00b69;
+}
 
 /* ############################################# Sidebar ############################################# */
 
 .sidebar{
-    height: 100vh;
+    height: 97vh;
     background-color: #1992d4;
     padding-left: 20px;
     padding-top: 20px;
@@ -58,7 +93,6 @@ body{
     display: flex;
     align-items: center;
     color: white;
-    font-family: sans-serif;
     font-weight: bold;
     font-size: 20px;
 
@@ -76,7 +110,6 @@ body{
     padding-left: 0px;
 }
 #sidebar-head{
-    font-family: sans-serif;
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 40px;
