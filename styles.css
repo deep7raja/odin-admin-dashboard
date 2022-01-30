@@ -1,0 +1,86 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template: auto auto auto / 1.2fr 1fr 4fr;
+
+}
+
+/* ############################################# Header ############################################# */
+
+
+.header{
+    border: 1px solid red;
+    grid-column: 2/-1;
+
+    padding: 10px 30px 10px 20px;
+}
+.header-one{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: auto 1fr auto auto auto;
+    gap: 20px;
+}
+.header-one input{
+    margin-right: 70px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(209, 193, 193);
+    height: 20px;
+    padding-left: 10px;
+}
+.header-one div{
+    font-size: 20px;
+    font-weight: bold;
+}
+#header-avatar{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+
+/* ############################################# Sidebar ############################################# */
+
+.sidebar{
+    height: 100vh;
+    background-color: #1992d4;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    grid-row: 1/-1;
+}
+.side-content{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+.side-content img{
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+#sidebar-head img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    padding-left: 0px;
+}
+#sidebar-head{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+#side-setting{
+    margin-top: 50px;
+}
