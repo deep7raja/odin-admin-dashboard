@@ -4,7 +4,9 @@ body{
     font-family: Roboto;
 }
 :root{
-    --main-bg-color: #e2e8f0;
+    --heading-font-size: 20px;
+    --content-text-color: #636363;
+    background-color: #e2e8f0;
 }
 
 .container{
@@ -18,7 +20,7 @@ body{
 
 .header{
     grid-column: 2/-1;
-
+    background-color: white;
     padding: 10px 30px 15px 20px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
@@ -116,4 +118,34 @@ body{
 }
 #side-setting{
     margin-top: 50px;
+}
+
+/* ############################################# Announcements ############################################# */
+
+.heading{
+    font-size: var(--heading-font-size);
+    font-weight: bold;
+}
+
+.an-header{
+    background-color: var(--main-bg-color);
+    margin: 20px;
+}
+.announcements{
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+}
+.an-title{
+    font-size: 15px;
+}
+.an-content{
+    font-size: 10px;
+    color: var(--content-text-color);
+    font-weight: normal;
+}
+.announcements hr{
+    color:rgb(229, 236, 231)
 }
