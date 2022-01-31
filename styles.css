@@ -130,6 +130,8 @@ body{
 .an-header{
     background-color: var(--main-bg-color);
     margin: 20px;
+    grid-row: 2/3;
+    grid-column: 3/4;
 }
 .announcements{
     background-color: white;
@@ -148,4 +150,39 @@ body{
 }
 .announcements hr{
     color:rgb(229, 236, 231)
+}
+
+/* ############################################# Trending ############################################# */
+.trend-header{
+    grid-row: 3/4;
+    grid-column: 3/4;
+    margin: 20px;
+}
+.trending{
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+.trend-cell{
+    display: flex;
+    font-weight: normal;
+    font-size: 14px;
+    align-items: center;
+}
+.trend-avatar{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.trend-title{
+}
+.trend-content{
+    color: var(--content-text-color);
 }
