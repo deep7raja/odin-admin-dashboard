@@ -11,7 +11,7 @@ body{
 
 .container{
     display: grid;
-    grid-template: auto auto auto / 1.2fr 1fr 4fr;
+    grid-template: auto auto auto / auto auto 20vw;
 
 }
 
@@ -84,7 +84,7 @@ body{
 /* ############################################# Sidebar ############################################# */
 
 .sidebar{
-    height: 97vh;
+    width: 200px;
     background-color: #1992d4;
     padding-left: 20px;
     padding-top: 20px;
@@ -185,4 +185,54 @@ body{
 }
 .trend-content{
     color: var(--content-text-color);
+}
+
+
+
+.card-header{
+    grid-row: 2/-1;
+    grid-column: 2/3;
+    margin: 20px;
+    margin-right: 0;
+}
+.card-container{
+    margin-top: 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card{
+    display: flex;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.card-strip{
+    background-color: #f0b429;
+    width: 7px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    margin-left: -15px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+.card-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-title{
+    font-size: 17px;
+}
+.card-content{
+    color: var(--content-text-color);
+    font-size: 13px;
+    font-weight: normal;
+}
+.card-buttons{
+    align-self: flex-end;
+    display: flex;
+    gap: 10px;
 }
